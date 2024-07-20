@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="a6172cb29dd52474e87f3a60f8edc36abb0308b0ccf5aefae2970960f8b1a2ba.html">Automate The Elements For Demoqa.Com</a></span>
+                > <span class="truncate-60"><a
+                    href="a4794fe1561762ec3e9f294d4bb2583ccfe8433d5f16b4c9e66ed242da5e726b.html">interacting with option Links </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-07-2024 18:39</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Automate The Elements For Demoqa.Com </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                interacting with different elements of this option
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">interacting with option Links
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="75619878588b0d6a5d76d9b7a9c641181821a5c07382c8b803d1a7d26326c337.png" title=" Given the client is on the homepage" width="1920"/>
+                <img src="75619878588b0d6a5d76d9b7a9c641181821a5c07382c8b803d1a7d26326c337.png" title=" user opens the https://demoqa.com/" width="1920"/>
+                <img src="75619878588b0d6a5d76d9b7a9c641181821a5c07382c8b803d1a7d26326c337.png" title=" Given the client is on the homepage (completed)" width="1920"/>
+                <img src="ac66cb9d97be58c1bd0a35b473d2c16955c26d5729631c08cddc8333b5ec5ff3.png" title=" When selects the option Elements" width="1920"/>
+                <img src="ac66cb9d97be58c1bd0a35b473d2c16955c26d5729631c08cddc8333b5ec5ff3.png" title=" User selects element" width="1920"/>
+                <img src="ac66cb9d97be58c1bd0a35b473d2c16955c26d5729631c08cddc8333b5ec5ff3.png" title=" user clicks on Boton option elements" width="1920"/>
+                <img src="ac66cb9d97be58c1bd0a35b473d2c16955c26d5729631c08cddc8333b5ec5ff3.png" title=" User selects element (completed)" width="1920"/>
+                <img src="ac66cb9d97be58c1bd0a35b473d2c16955c26d5729631c08cddc8333b5ec5ff3.png" title=" When selects the option Elements (completed)" width="1920"/>
+                <img src="b135304b55e354c13538884e8ebca31e58bab2b6e22734cf788d7c1257761e8f.png" title=" When selects the option Links" width="1920"/>
+                <img src="b135304b55e354c13538884e8ebca31e58bab2b6e22734cf788d7c1257761e8f.png" title=" User selects link" width="1920"/>
+                <img src="b135304b55e354c13538884e8ebca31e58bab2b6e22734cf788d7c1257761e8f.png" title=" user clicks on Button option Links" width="1920"/>
+                <img src="b8b629b2ec2ae31700efebc86ab6fd2112e74175b8d003efc92b7f1bb8ef35c8.png" title=" user clicks on Button option Links (completed)" width="1920"/>
+                <img src="b8b629b2ec2ae31700efebc86ab6fd2112e74175b8d003efc92b7f1bb8ef35c8.png" title=" User selects link (completed)" width="1920"/>
+                <img src="b8b629b2ec2ae31700efebc86ab6fd2112e74175b8d003efc92b7f1bb8ef35c8.png" title=" When selects the option Links (completed)" width="1920"/>
+                <img src="cf48efdfcdce4ede303ebb413d4a1ba644d43fbf3bd6bf6caed81c3abd512f69.png" title=" And select the home link" width="1920"/>
+                <img src="cf48efdfcdce4ede303ebb413d4a1ba644d43fbf3bd6bf6caed81c3abd512f69.png" title=" User selects link home" width="1920"/>
+                <img src="cf48efdfcdce4ede303ebb413d4a1ba644d43fbf3bd6bf6caed81c3abd512f69.png" title=" user clicks on link home" width="1920"/>
+                <img src="cf48efdfcdce4ede303ebb413d4a1ba644d43fbf3bd6bf6caed81c3abd512f69.png" title=" User switch home page" width="1920"/>
+                <img src="4e87170376693825ba176f8c4c26768ae38854703216aff8e7c35d38fffdf194.png" title=" User switch home page (completed)" width="1920"/>
+                <img src="4e87170376693825ba176f8c4c26768ae38854703216aff8e7c35d38fffdf194.png" title=" User selects link home (completed)" width="1920"/>
+                <img src="4e87170376693825ba176f8c4c26768ae38854703216aff8e7c35d38fffdf194.png" title=" And select the home link (completed)" width="1920"/>
+                <img src="d8db150c43cd665a0499702b069766fcb2ce042fbf40937cf3dda544d8e5b305.png" title=" Then validate hompage in the new tab" width="1920"/>
+                <img src="d8db150c43cd665a0499702b069766fcb2ce042fbf40937cf3dda544d8e5b305.png" title=" Then validate message homepage present" width="1920"/>
+                <img src="d8db150c43cd665a0499702b069766fcb2ce042fbf40937cf3dda544d8e5b305.png" title=" Then validate hompage in the new tab (completed)" width="1920"/>
+                <img src="cf48efdfcdce4ede303ebb413d4a1ba644d43fbf3bd6bf6caed81c3abd512f69.png" title=" When select the dynamic home link" width="1920"/>
+                <img src="cf48efdfcdce4ede303ebb413d4a1ba644d43fbf3bd6bf6caed81c3abd512f69.png" title=" User selects dynamic link" width="1920"/>
+                <img src="cf48efdfcdce4ede303ebb413d4a1ba644d43fbf3bd6bf6caed81c3abd512f69.png" title=" User switch home page" width="1920"/>
+                <img src="cf48efdfcdce4ede303ebb413d4a1ba644d43fbf3bd6bf6caed81c3abd512f69.png" title=" user clicks on link home dynamic" width="1920"/>
+                <img src="cf48efdfcdce4ede303ebb413d4a1ba644d43fbf3bd6bf6caed81c3abd512f69.png" title=" user clicks on link home dynamic (completed)" width="1920"/>
+                <img src="cf48efdfcdce4ede303ebb413d4a1ba644d43fbf3bd6bf6caed81c3abd512f69.png" title=" User switch home page" width="1920"/>
+                <img src="c3ddbd25661522140e3171d5da2b306f1aa2a19b624d49e762db999c5efae938.png" title=" User switch home page (completed)" width="1920"/>
+                <img src="c3ddbd25661522140e3171d5da2b306f1aa2a19b624d49e762db999c5efae938.png" title=" User selects dynamic link (completed)" width="1920"/>
+                <img src="c3ddbd25661522140e3171d5da2b306f1aa2a19b624d49e762db999c5efae938.png" title=" When select the dynamic home link (completed)" width="1920"/>
+                <img src="25a65c3345db7d07384868861f3c9b3325abaaa8f3563c03ecaf3e6851ccb277.png" title=" Then validate hompage in the new tab" width="1920"/>
+                <img src="25a65c3345db7d07384868861f3c9b3325abaaa8f3563c03ecaf3e6851ccb277.png" title=" Then validate message homepage present" width="1920"/>
+                <img src="25a65c3345db7d07384868861f3c9b3325abaaa8f3563c03ecaf3e6851ccb277.png" title=" Then validate hompage in the new tab (completed)" width="1920"/>
+                <img src="7f57477344596e5f955671152a91873f02eca9362b6f4bd91e7d8e6c077e681a.png" title=" When select the created link" width="1920"/>
+                <img src="7f57477344596e5f955671152a91873f02eca9362b6f4bd91e7d8e6c077e681a.png" title=" User selects created link" width="1920"/>
+                <img src="7f57477344596e5f955671152a91873f02eca9362b6f4bd91e7d8e6c077e681a.png" title=" User switch home page" width="1920"/>
+                <img src="cf48efdfcdce4ede303ebb413d4a1ba644d43fbf3bd6bf6caed81c3abd512f69.png" title=" User switch home page (completed)" width="1920"/>
+                <img src="cf48efdfcdce4ede303ebb413d4a1ba644d43fbf3bd6bf6caed81c3abd512f69.png" title=" user clicks on link created" width="1920"/>
+                <img src="d1decf8550e5db2de7ea1a88b2a531f65dc9954579ade4d4a7ed8c9d544798c0.png" title=" user clicks on link created (completed)" width="1920"/>
+                <img src="d1decf8550e5db2de7ea1a88b2a531f65dc9954579ade4d4a7ed8c9d544798c0.png" title=" User selects created link (completed)" width="1920"/>
+                <img src="d1decf8550e5db2de7ea1a88b2a531f65dc9954579ade4d4a7ed8c9d544798c0.png" title=" When select the created link (completed)" width="1920"/>
+                <img src="71d3d751d7a4d99b7e1f045ac13fd8d68cb6f1ed2c9434b992909e3aa3b84c32.png" title=" Then validate status &quot;Created&quot;" width="1920"/>
+                <img src="71d3d751d7a4d99b7e1f045ac13fd8d68cb6f1ed2c9434b992909e3aa3b84c32.png" title=" Then validate status created should be a string containing 'Created'" width="1920"/>
+                <img src="71d3d751d7a4d99b7e1f045ac13fd8d68cb6f1ed2c9434b992909e3aa3b84c32.png" title=" Then validate status &quot;Created&quot; (completed)" width="1920"/>
+                <img src="5dff502f2761cb92d746abb33238dbc46cc8ee1bdd5729ad35421f69bb6c121f.png" title=" When select the no content link" width="1920"/>
+                <img src="5dff502f2761cb92d746abb33238dbc46cc8ee1bdd5729ad35421f69bb6c121f.png" title=" User selects no content link" width="1920"/>
+                <img src="5dff502f2761cb92d746abb33238dbc46cc8ee1bdd5729ad35421f69bb6c121f.png" title=" user types 'PAGE_DOWN' in body" width="1920"/>
+                <img src="5dff502f2761cb92d746abb33238dbc46cc8ee1bdd5729ad35421f69bb6c121f.png" title=" user clicks on link no content" width="1920"/>
+                <img src="600e43c4519acf2f1ac7a279a99f33292011ea47872984aad4ab11b2df99adc9.png" title=" user clicks on link no content (completed)" width="1920"/>
+                <img src="600e43c4519acf2f1ac7a279a99f33292011ea47872984aad4ab11b2df99adc9.png" title=" User selects no content link (completed)" width="1920"/>
+                <img src="600e43c4519acf2f1ac7a279a99f33292011ea47872984aad4ab11b2df99adc9.png" title=" When select the no content link (completed)" width="1920"/>
+                <img src="5bd9116e80b5475d73aa323007513b0220086c40b5348611ed553439cab2d571.png" title=" Then validate status nc &quot;No Content&quot;" width="1920"/>
+                <img src="5bd9116e80b5475d73aa323007513b0220086c40b5348611ed553439cab2d571.png" title=" Then validate status no content should be a string containing 'No Content'" width="1920"/>
+                <img src="5bd9116e80b5475d73aa323007513b0220086c40b5348611ed553439cab2d571.png" title=" Then validate status nc &quot;No Content&quot; (completed)" width="1920"/>
+                <img src="5bd9116e80b5475d73aa323007513b0220086c40b5348611ed553439cab2d571.png" title=" When select the moved link" width="1920"/>
+                <img src="5bd9116e80b5475d73aa323007513b0220086c40b5348611ed553439cab2d571.png" title=" User selects move link" width="1920"/>
+                <img src="5bd9116e80b5475d73aa323007513b0220086c40b5348611ed553439cab2d571.png" title=" user types 'PAGE_DOWN' in body" width="1920"/>
+                <img src="6f1e92fe458f0741c2606366144eaa40f42baa4681b0cb57df555adc47e8c682.png" title=" user clicks on link moved" width="1920"/>
+                <img src="6f1e92fe458f0741c2606366144eaa40f42baa4681b0cb57df555adc47e8c682.png" title=" User selects move link (completed)" width="1920"/>
+                <img src="6f1e92fe458f0741c2606366144eaa40f42baa4681b0cb57df555adc47e8c682.png" title=" When select the moved link (completed)" width="1920"/>
+                <img src="0e7e540e7170a82bf1bc64b70199686879555c3818e419bd925b46cd8bc8f113.png" title=" Then validate status mp &quot;Moved Permanently&quot;" width="1920"/>
+                <img src="0e7e540e7170a82bf1bc64b70199686879555c3818e419bd925b46cd8bc8f113.png" title=" Then validate status moved should be a string containing 'Moved Permanently'" width="1920"/>
+                <img src="0e7e540e7170a82bf1bc64b70199686879555c3818e419bd925b46cd8bc8f113.png" title=" Then validate status mp &quot;Moved Permanently&quot; (completed)" width="1920"/>
+                <img src="0e7e540e7170a82bf1bc64b70199686879555c3818e419bd925b46cd8bc8f113.png" title=" When select the bad request link" width="1920"/>
+                <img src="0e7e540e7170a82bf1bc64b70199686879555c3818e419bd925b46cd8bc8f113.png" title=" User selects bad request link" width="1920"/>
+                <img src="0e7e540e7170a82bf1bc64b70199686879555c3818e419bd925b46cd8bc8f113.png" title=" user types 'PAGE_DOWN' in body" width="1920"/>
+                <img src="852498afb66dee68650017b004711388ee1b2ba92c3ad62c5f0ca302c4032d7d.png" title=" user clicks on link bad request" width="1920"/>
+                <img src="852498afb66dee68650017b004711388ee1b2ba92c3ad62c5f0ca302c4032d7d.png" title=" User selects bad request link (completed)" width="1920"/>
+                <img src="852498afb66dee68650017b004711388ee1b2ba92c3ad62c5f0ca302c4032d7d.png" title=" When select the bad request link (completed)" width="1920"/>
+                <img src="64d8dc64c0b7011ee2a1654c40dbaaa7627f5a3c0cd0beb5a9b06c1323c3f7db.png" title=" Then validate status br &quot;Bad Request&quot;" width="1920"/>
+                <img src="64d8dc64c0b7011ee2a1654c40dbaaa7627f5a3c0cd0beb5a9b06c1323c3f7db.png" title=" Then validate status bad request should be a string containing 'Bad Request'" width="1920"/>
+                <img src="64d8dc64c0b7011ee2a1654c40dbaaa7627f5a3c0cd0beb5a9b06c1323c3f7db.png" title=" Then validate status br &quot;Bad Request&quot; (completed)" width="1920"/>
+                <img src="64d8dc64c0b7011ee2a1654c40dbaaa7627f5a3c0cd0beb5a9b06c1323c3f7db.png" title=" When select the unauthorized link" width="1920"/>
+                <img src="64d8dc64c0b7011ee2a1654c40dbaaa7627f5a3c0cd0beb5a9b06c1323c3f7db.png" title=" User selects unauthorized link" width="1920"/>
+                <img src="64d8dc64c0b7011ee2a1654c40dbaaa7627f5a3c0cd0beb5a9b06c1323c3f7db.png" title=" user types 'PAGE_DOWN' in body" width="1920"/>
+                <img src="f58a2907f67bc52e60503421fd12a519c68c235ecc048549ace9769e52f90f65.png" title=" user clicks on link unauthorized" width="1920"/>
+                <img src="f58a2907f67bc52e60503421fd12a519c68c235ecc048549ace9769e52f90f65.png" title=" User selects unauthorized link (completed)" width="1920"/>
+                <img src="f58a2907f67bc52e60503421fd12a519c68c235ecc048549ace9769e52f90f65.png" title=" When select the unauthorized link (completed)" width="1920"/>
+                <img src="97a728c3d222febac686563c76eeaca548b20976e6e010832b6b868e95ebbe9c.png" title=" Then validate status u &quot;Unauthorized&quot;" width="1920"/>
+                <img src="97a728c3d222febac686563c76eeaca548b20976e6e010832b6b868e95ebbe9c.png" title=" Then validate status unauthorized should be a string containing 'Unauthorized'" width="1920"/>
+                <img src="97a728c3d222febac686563c76eeaca548b20976e6e010832b6b868e95ebbe9c.png" title=" Then validate status u &quot;Unauthorized&quot; (completed)" width="1920"/>
+                <img src="97a728c3d222febac686563c76eeaca548b20976e6e010832b6b868e95ebbe9c.png" title=" When select the forbidden link" width="1920"/>
+                <img src="97a728c3d222febac686563c76eeaca548b20976e6e010832b6b868e95ebbe9c.png" title=" User selects forbidden link" width="1920"/>
+                <img src="97a728c3d222febac686563c76eeaca548b20976e6e010832b6b868e95ebbe9c.png" title=" user types 'PAGE_DOWN' in body" width="1920"/>
+                <img src="390dad6b5805c3aafc8c30d74971b0b873bca6827c9f6823dc4a32cf960af78d.png" title=" user clicks on link forbidden" width="1920"/>
+                <img src="390dad6b5805c3aafc8c30d74971b0b873bca6827c9f6823dc4a32cf960af78d.png" title=" User selects forbidden link (completed)" width="1920"/>
+                <img src="390dad6b5805c3aafc8c30d74971b0b873bca6827c9f6823dc4a32cf960af78d.png" title=" When select the forbidden link (completed)" width="1920"/>
+                <img src="50a9144b9ea0ce4b5aa9214e0f162234ad83e38b78e6162e539067216c7ef82c.png" title=" Then validate status f &quot;Forbidden&quot;" width="1920"/>
+                <img src="50a9144b9ea0ce4b5aa9214e0f162234ad83e38b78e6162e539067216c7ef82c.png" title=" Then validate status forbidden should be a string containing 'Forbidden'" width="1920"/>
+                <img src="50a9144b9ea0ce4b5aa9214e0f162234ad83e38b78e6162e539067216c7ef82c.png" title=" Then validate status f &quot;Forbidden&quot; (completed)" width="1920"/>
+                <img src="00882feae2cafda2e18c722757379dea7b73730563223a99b7dc01474f87f5e2.png" title=" When select the not found link" width="1920"/>
+                <img src="00882feae2cafda2e18c722757379dea7b73730563223a99b7dc01474f87f5e2.png" title=" User selects not found link" width="1920"/>
+                <img src="00882feae2cafda2e18c722757379dea7b73730563223a99b7dc01474f87f5e2.png" title=" user clicks on link not found" width="1920"/>
+                <img src="00882feae2cafda2e18c722757379dea7b73730563223a99b7dc01474f87f5e2.png" title=" User selects not found link (completed)" width="1920"/>
+                <img src="00882feae2cafda2e18c722757379dea7b73730563223a99b7dc01474f87f5e2.png" title=" When select the not found link (completed)" width="1920"/>
+                <img src="e2cdf43255d087ed679b209676cff63f06e19d879f74a2614f72c92ea1ab07d8.png" title=" Then validate status nf &quot;Not Found&quot;" width="1920"/>
+                <img src="e2cdf43255d087ed679b209676cff63f06e19d879f74a2614f72c92ea1ab07d8.png" title=" Then validate status not found should be a string containing 'Not Found'" width="1920"/>
+                <img src="e2cdf43255d087ed679b209676cff63f06e19d879f74a2614f72c92ea1ab07d8.png" title=" Then validate status nf &quot;Not Found&quot; (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.84</span>
+</div>
+</body>
+</html>
