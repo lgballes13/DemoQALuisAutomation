@@ -68,7 +68,6 @@ public class InsertInformation implements Task {
                 Click.on(FormsPage.LIST_YEAR.of(year)),
                 Click.on(FormsPage.BTN_DAY.of(day)),
                 Hit.the(Keys.PAGE_DOWN).into("//body"),
-                Click.on(FormsPage.BTN_SUBJECT),
                 Click.on(FormsPage.LBL_HOBBIES.of(hobbies)),
                 Upload.theFile(Paths.get(filePath)).to(FormsPage.BTN_UPLOAD_PICTURE),
                 Enter.theValue(currentAddress).into(FormsPage.TXT_ADDRESS),

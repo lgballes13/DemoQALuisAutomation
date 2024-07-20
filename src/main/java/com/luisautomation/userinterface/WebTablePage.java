@@ -15,11 +15,8 @@ public class WebTablePage {
     public static final Target TXT_SALARY = Target.the("input salary").located(By.xpath("//input[@placeholder='Salary']"));
     public static final Target TXT_DEPARTAMENT = Target.the("input departament").located(By.xpath("//input[@placeholder='Department']"));
     public static final Target BTN_SUBMIT = Target.the("button submit").located(By.xpath("//button[text()='Submit']"));
-
     public static final Target LBL_VALUE = Target.the("label vale ").locatedBy("//div[text()='{0}']");
-
     public static final Target BTN_EDIT = Target.the("button edit register").locatedBy("//span[@id='edit-record-4']");
-
     public static final Target BTN_DELETE = Target.the("button delete register").locatedBy("//span[@id='delete-record-4']");
 
 

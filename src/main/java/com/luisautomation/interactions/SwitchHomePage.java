@@ -25,9 +25,7 @@ public class SwitchHomePage implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
         WebDriver driver = BrowseTheWeb.as(actor).getDriver();
-
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
-
         actor.attemptsTo(Switch.toWindow(tabs.get(tab)));
     }
 }

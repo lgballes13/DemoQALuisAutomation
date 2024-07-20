@@ -30,8 +30,6 @@ public class TextBox implements Task {
         this.email = model.get(0).getEmail();
         this.currentAddress = model.get(0).getCurrentAddress();
         this.permanentAddress = model.get(0).getPermanentAddress();
-
-
     }
 
     public static TextBox information(List<TextBoxModel> model){
@@ -40,7 +38,6 @@ public class TextBox implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-
         actor.attemptsTo(
                 Hit.the(Keys.PAGE_DOWN).into(TextBoxPage.BODY),
                 Enter.theValue(fullName).into(TextBoxPage.TXT_FULL_NAME),

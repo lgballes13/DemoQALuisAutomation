@@ -5,23 +5,17 @@ import com.luisautomation.models.TextBoxModel;
 import com.luisautomation.models.WebTableModel;
 import com.luisautomation.questions.*;
 import com.luisautomation.tasks.*;
-import com.luisautomation.userinterface.HomePage;
-import com.luisautomation.utils.BaseSelenium;
-import com.luisautomation.utils.LoginPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.serenitybdd.core.Serenity;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import org.hamcrest.CoreMatchers;
-import org.openqa.selenium.WebDriver;
 
 import java.util.List;
-import java.util.Map;
 
 public class ElementsStepDefinitions {
 
@@ -57,10 +51,10 @@ public class ElementsStepDefinitions {
     @Then("^validate information registered$")
     public void validateInformationRegistered(List<TextBoxModel> datamodel) {
         System.out.println(datamodel.get(0).getFullName());
-         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message", ValidateTextBox.name(), CoreMatchers.containsString(datamodel.get(0).getFullName())));
-         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message", ValidateTextBox.email(), CoreMatchers.containsString(datamodel.get(0).getEmail())));
-         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message", ValidateTextBox.currentAddress(), CoreMatchers.containsString(datamodel.get(0).getCurrentAddress())));
-         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message", ValidateTextBox.permanentAddress(), CoreMatchers.containsString(datamodel.get(0).getPermanentAddress())));
+         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message name", ValidateTextBox.name(), CoreMatchers.containsString(datamodel.get(0).getFullName())));
+         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message email", ValidateTextBox.email(), CoreMatchers.containsString(datamodel.get(0).getEmail())));
+         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message address", ValidateTextBox.currentAddress(), CoreMatchers.containsString(datamodel.get(0).getCurrentAddress())));
+         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message permanent address", ValidateTextBox.permanentAddress(), CoreMatchers.containsString(datamodel.get(0).getPermanentAddress())));
     }
 
     //checkbox
@@ -78,7 +72,7 @@ public class ElementsStepDefinitions {
 
     @Then("^validate that the message You have selected contains \"([^\"]*)\"$")
     public void validateThatTheMessageYouHaveSelectedContains(String notes) {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate checkbox desktop", ValidateCheckBox.notes(), CoreMatchers.containsString(notes)));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate checkbox notes desktop", ValidateCheckBox.notes(), CoreMatchers.containsString(notes)));
     }
 
     @When("^select the option Documents$")
@@ -88,8 +82,8 @@ public class ElementsStepDefinitions {
 
     @Then("^validate that the message You have selected contains \"([^\"]*)\" and \"([^\"]*)\"$")
     public void validateThatTheMessageYouHaveSelectedContainsAnd(String workspace, String office) {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate checkbox documents", ValidateCheckBox.workspace(), CoreMatchers.containsString(workspace)));
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate checkbox documents", ValidateCheckBox.office(), CoreMatchers.containsString(office)));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate checkbox workspace", ValidateCheckBox.workspace(), CoreMatchers.containsString(workspace)));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate checkbox office", ValidateCheckBox.office(), CoreMatchers.containsString(office)));
     }
 
     @When("^select the option Word Filedoc of Downloads$")
@@ -146,12 +140,12 @@ public class ElementsStepDefinitions {
 
     @Then("^validate the information in the table$")
     public void validateTheInformationInTheTable(List<WebTableModel> data) {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message", ValidateRegister.firstName(data.get(0).getFirstName()), CoreMatchers.containsString(data.get(0).getFirstName())));
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message", ValidateRegister.lastName(data.get(0).getLastName()), CoreMatchers.containsString(data.get(0).getLastName())));
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message", ValidateRegister.email(data.get(0).getEmail()), CoreMatchers.containsString(data.get(0).getEmail())));
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message", ValidateRegister.age(data.get(0).getAge()), CoreMatchers.containsString(data.get(0).getAge())));
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message", ValidateRegister.salary(data.get(0).getSalary()), CoreMatchers.containsString(data.get(0).getSalary())));
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message", ValidateRegister.department(data.get(0).getDepartment()), CoreMatchers.containsString(data.get(0).getDepartment())));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message firstname", ValidateRegister.firstName(data.get(0).getFirstName()), CoreMatchers.containsString(data.get(0).getFirstName())));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message lastname", ValidateRegister.lastName(data.get(0).getLastName()), CoreMatchers.containsString(data.get(0).getLastName())));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message email", ValidateRegister.email(data.get(0).getEmail()), CoreMatchers.containsString(data.get(0).getEmail())));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message age", ValidateRegister.age(data.get(0).getAge()), CoreMatchers.containsString(data.get(0).getAge())));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message salary", ValidateRegister.salary(data.get(0).getSalary()), CoreMatchers.containsString(data.get(0).getSalary())));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("validate message department", ValidateRegister.department(data.get(0).getDepartment()), CoreMatchers.containsString(data.get(0).getDepartment())));
     }
 
     @When("^edit the form information$")

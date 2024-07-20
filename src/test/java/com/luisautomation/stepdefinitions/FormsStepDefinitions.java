@@ -4,7 +4,6 @@ import com.luisautomation.interactions.SelectsForm;
 import com.luisautomation.interactions.SelectsPracticeForm;
 import com.luisautomation.models.FormModel;
 import com.luisautomation.questions.ValidateInformation;
-import com.luisautomation.questions.ValidateTextBox;
 import com.luisautomation.tasks.InsertInformation;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Then;
@@ -13,7 +12,7 @@ import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import org.hamcrest.CoreMatchers;
-import org.jsoup.helper.Validate;
+
 
 import java.util.List;
 

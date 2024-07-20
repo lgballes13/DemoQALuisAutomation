@@ -2,7 +2,6 @@ package com.luisautomation.stepdefinitions;
 
 import com.luisautomation.interactions.SelectsAlertsFrames;
 import com.luisautomation.interactions.SelectsModal;
-import com.luisautomation.questions.ValidateButtton;
 import com.luisautomation.questions.ValidateDailogsModal;
 import com.luisautomation.tasks.SelectsLargeModal;
 import com.luisautomation.tasks.SelectsSmallModal;

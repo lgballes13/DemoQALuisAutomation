@@ -33,12 +33,12 @@ public class DeleteFile implements Interaction {
 
         if (file.exists()) {
             if (file.delete()) {
-                System.out.println("El archivo ha sido eliminado: " + file);
+                System.out.println("The file has been deleted: " + file);
             } else {
-                System.out.println("El archivo no se pudo eliminar: " + file);
+                System.out.println("The file could not be deleted: " + file);
             }
         } else {
-            System.out.println("El archivo no existe: " + file);
+            System.out.println("The file not exists: " + file);
         }
     }
 
